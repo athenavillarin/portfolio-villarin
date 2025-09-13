@@ -2,10 +2,7 @@
 	<h1>🎨 Athena Villarin – Portfolio</h1>
 	<p>A modern, responsive, accessible personal portfolio.</p>
 	<p>Link to portfolio: [Portfolio](https://athenavillarin.github.io)
-	<p>
-		<a href="#preview" title="Jump to preview section">Preview</a> ·
-		<a href="#features" title="Jump to features">Features</a> ·
-	</p>
+
 </div>
 
 ---
