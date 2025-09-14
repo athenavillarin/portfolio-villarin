@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ASV Portfolio</title>
+  <title>ASV</title>
   <meta name="description" content="Portfolio website of Athena S. Villarin." />
   <meta name="author" content="Athena S. Villarin" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,7 +21,6 @@
         <li><a href="#education">Education</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
         <li><button class="mode-toggle" aria-label="Toggle dark mode">🌙</button></li>
       </ul>
     </nav>
@@ -32,7 +31,7 @@
       <div class="hero__content">
         <p class="eyebrow">Hello there! I am</p>
         <h1 class="gradient-text">Athena<br />Villarin</h1>
-        <p class="lead">A current student of Bachelor of Science in Computer Science at West Visayas State University - Main Campus. I enjoy coding and want to explore more about web, mobile, and game development. I would like to learn new technologies and apply them to my projects.</p>
+        <p class="lead">A student currently studying Bachelor of Science in Computer Science at West Visayas State University - Main Campus. I enjoy coding and want to explore more about web, mobile, and game development. I would like to learn new technologies and apply them to my projects.</p>
         <div class="social-cubes" aria-label="Social links">
           <a class="cube" href="https://www.facebook.com/AthenaVillarin6/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
           <a class="cube" href="https://github.com/athenavillarin" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
@@ -64,12 +63,13 @@
 
     <section id="projects" class="section" aria-labelledby="projects-title">
       <div class="section__inner">
-        <h2 id="projects-title">Projects</h2>
+        <h2 id="projects-title">Featured Projects</h2>
         <div class="projects-grid">
           <article class="project-card">
             <div class="project-card__body">
+              <img src="assets/img/portfolio-chowtime.jpg" alt="ChowTime project" class="project-media" style="width:100%;border-radius:12px;margin-bottom:1rem;" />
               <h3>ChowTime</h3>
-              <p>A Smart Pet Feeder that uses ESP-32CAM for a final project.</p>
+              <p>A Smart Pet Feeder that uses ESP-32CAM</p>
               <ul class="tech-list"><li>C++</li><li>Arduino</li><li>React Native</li><li>TypeScript</li><li>Firebase</li></ul>
             </div>
             <div class="project-card__footer">
@@ -78,22 +78,25 @@
           </article>
           <article class="project-card">
             <div class="project-card__body">
-              <h3>Pixel Game</h3>
-              <p>A pixel game that uses A* pathfinding algorithm for a final project</p>
+              <video src="assets/img/portfolio-cict-escape.mp4" class="project-media" controls poster="assets/img/portfolio-cict-escape-poster.jpg" style="width:100%;border-radius:12px;margin-bottom:1rem;"></video>
+              <h3>CICT Escape</h3>
+              <p>Dynamic Pathfinding in a Grid-Based Game using A* Search Algorithm</p>
               <ul class="tech-list"><li>Python</li></ul>
             </div>
             <div class="project-card__footer">
-              <a href="https://github.com/athenavillarin/Final-Project---data-structures-and-algorithms" class="btn-sm" target="_blank" rel="noopener" aria-label="View Pixel Game on GitHub">View on GitHub</a>
+              <a href="https://github.com/athenavillarin/Final-Project---data-structures-and-algorithms" class="btn-sm" target="_blank" rel="noopener" aria-label="View CICT Escape on GitHub">View on GitHub</a>
             </div>
           </article>
           <article class="project-card">
             <div class="project-card__body">
+              <img src="assets/img/portfolio-crest-games.jpg" alt="CrestGames project" class="project-media" style="width:100%;border-radius:12px;margin-bottom:1rem;" />
               <h3>CrestGames</h3>
               <p>A frontend-only website that uses Sass for a final project</p>
               <ul class="tech-list"><li>HTML</li><li>CSS</li><li>Sass</li><li>JavaScript</li></ul>
             </div>
             <div class="project-card__footer">
               <a href="https://github.com/athenavillarin/school-project-sass-website" class="btn-sm" target="_blank" rel="noopener" aria-label="View Website on GitHub">View on GitHub</a>
+              <a href="https://crestgames.netlify.app/" class="btn-sm" target="_blank" rel="noopener" aria-label="Visit CrestGames"><i class="fas fa-link" aria-hidden="true"></i></a>
             </div>
           </article>
         </div>
