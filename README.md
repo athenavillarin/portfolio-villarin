@@ -1,7 +1,6 @@
 <div align="center">
 	<h1>🎨 Athena Villarin – Portfolio</h1>
 	<p>A modern, responsive, accessible personal portfolio.</p>
-
 </div>
 
 ---
