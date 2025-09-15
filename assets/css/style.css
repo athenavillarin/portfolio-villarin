@@ -101,6 +101,15 @@ img { max-width: 100%; display:block; }
 .btn:hover, .btn-sm:hover { filter:brightness(1.08); transform:translateY(-3px); }
 .btn:active, .btn-sm:active { transform:translateY(0); }
 
+/* Disabled / non-interactive button variant */
+.btn-disabled {
+  background: #777 !important;
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.7;
+  text-decoration: none;
+}
+
 /* Skills */
 
 .skills-grid {
