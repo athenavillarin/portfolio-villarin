@@ -1,7 +1,6 @@
 <div align="center">
 	<h1>🎨 Athena Villarin – Portfolio</h1>
 	<p>A modern, responsive, accessible personal portfolio.</p>
-	<p>Link to portfolio: [Portfolio](https://athenavillarin.github.io)
 
 </div>
 
@@ -26,3 +25,7 @@ This repository contains my personal portfolio site, created as part of the cour
 - Semantic landmarks (`header`, `main`, `section`, `nav`, `figure`, `footer`)
 - Lazy-loaded profile image & performant asset usage
 - Minimal external dependencies (Google Fonts + Font Awesome)
+
+## 📝 Instructions
+- Click to visit my portfolio: [Portfolio](https://athenavillarin.github.io)
+- To make a similar portfolio, you can clone this repository and edit the contents to match your details
