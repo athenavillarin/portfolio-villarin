@@ -111,3 +111,54 @@ fetch('skills.json')
   const yearEl = document.getElementById('year');
   if(yearEl) yearEl.textContent = new Date().getFullYear();
 })();
+
+// Lightbox for project images
+(function(){
+  const lightbox = document.getElementById('lightbox');
+  if(!lightbox) return;
+  const imgEl = document.getElementById('lightbox-img');
+  const captionEl = document.getElementById('lightbox-caption');
+  const closeBtn = lightbox.querySelector('.lightbox__close');
+  const mediaNodes = [...document.querySelectorAll('.project-card .project-media')]
+    .filter(el => el.tagName === 'IMG'); // exclude videos
+  if(mediaNodes.length === 0) return;
+  let index = 0;
+  let lastFocus = null;
+
+  function open(i){
+    index = i;
+    const el = mediaNodes[index];
+    imgEl.src = el.getAttribute('src');
+    imgEl.alt = el.getAttribute('alt') || 'Project image';
+    captionEl.textContent = el.closest('.project-card')?.querySelector('h3')?.textContent || '';
+    lightbox.setAttribute('aria-hidden','false');
+    document.body.style.overflow = 'hidden';
+    lastFocus = document.activeElement;
+    closeBtn.focus();
+  }
+  function close(){
+    lightbox.setAttribute('aria-hidden','true');
+    document.body.style.overflow = '';
+    imgEl.src='';
+    if(lastFocus) lastFocus.focus();
+  }
+
+  mediaNodes.forEach((el,i)=>{
+    el.addEventListener('click', ()=> open(i));
+    el.setAttribute('tabindex','0');
+    el.addEventListener('keydown', e=>{ if(e.key==='Enter' || e.key===' '){ e.preventDefault(); open(i);} });
+  });
+  closeBtn.addEventListener('click', close);
+  lightbox.addEventListener('click', e=>{ if(e.target === lightbox) close(); });
+  document.addEventListener('keydown', e=>{
+    if(lightbox.getAttribute('aria-hidden') === 'true') return;
+    if(e.key === 'Escape') close();
+    // Only trap focus on closeBtn
+    else if(e.key === 'Tab') {
+      if(document.activeElement !== closeBtn) {
+        e.preventDefault();
+        closeBtn.focus();
+      }
+    }
+  });
+})();
